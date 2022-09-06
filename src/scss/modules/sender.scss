@@ -1,0 +1,12 @@
+.sender {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0px;
+    grid-column-start: 2;
+    &__button {
+      background: rgba(24, 111, 23, 0.650298);
+      padding: var(--normal-padding);
+      border: none;
+      border-radius: 5px;
+    }
+  }

@@ -1,0 +1,11 @@
+.special {
+    margin: 5px;
+    text-align: center;
+    &__button {
+      display: block;
+      margin-bottom: 5px;
+    }
+    &__mark {
+      display: block;
+    }
+  }

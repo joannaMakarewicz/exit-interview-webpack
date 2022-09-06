@@ -1,154 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Exit interview</title>
+    <link href="../scss/main.scss" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="hello">
-      <p>Jestem tu</p>
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header"></header>
+
+    <main class="main">
+      <div class="heading">
+        <h1 class="heading__name">Exit interview</h1>
+        <div class="heading__content">
+          <h2>Dzień dobry,</h2>
+          <p>zbliża się termin zakończenia przez Ciebie współpracy z firmą
+          maka<i>Design</i>. Zapraszam Cię zatem do uzupełnienia poniższej ankiety.
+          Zapewniam, że wnikliwie przeanalizujemy Twoje sugestie, a wyciągnięte
+          wnioski przyczynią się do rozwoju naszego środowiska pracy.
+          Proponujemy Ci następująca kolejność zdarzeń:</p>
+        </div>
+        <ol>
+          <li>Uzupełnienie ankiety.</li>
+          <li>
+            Spotkanie z HR Business Partnerem w celu pogłębienia Twoich opinii.
+          </li>
+          <li>Wspólne omówienie wniosków i możliwych zmian w makaDesign.</li>
+        </ol>
+        <p><b>Serdecznie zapraszam Cię do pierwszego etapu!</b></p>
+      </div>
+<form class="form" method="post" action="https://dev.cotenfrontend.pl">
+      <article class="article article__1">
+        <h3>Ogólna ocena satysfakcji</h3>
+        <p>
+          Jak bardzo prawdopodobne jest, że polecisz nas jako pracodawcę swojemu
+          znajomemu?
+        </p>
+        <div class="article__radio">
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark0"
+              />0</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input class="special__button" name="mainMark" type="radio" value="mark1" />
+              1</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input class="special__button" name="mainMark" type="radio" value="mark2" />
+              2</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input class="special__button" name="mainMark" type="radio" value="mark3" />
+              3</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark4"
+              />4</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark5"
+              />5</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark6"
+              />6</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark7"
+              />7</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark8"
+              />8</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark9"
+              />9</label
+            >
+          </p>
+          <p class="special">
+            <label
+              ><input
+                class="special__button"
+                name="mainMark"
+                type="radio"
+                value="mark10"
+                checked
+              />10</label
+            >
+          </p>
+        </div>
+      </article>
+        <article class="article article__2">
+          <h3>Oceń swoje doświadczenia z pracy w maka<i>Design</i></h3>
+
+         <p></p> <label>Miałam/em szansę w pełni wykorzystać swoje możliwości:</label>
+          <input class="article__option" type="range" min="0" max="5" value="1" step="1" name="question1">
+        </p>
+        <p>
+          <label>Otrzymałem niezbędne szkolenia i wsparcie w czasie wdrożenia:</label>
+          <input class="article__option" type="range" min="0" max="5" value="1" step="1" name="question2">
+        </p>
+        <p>
+          <label>Było dla mnie jasne, czego się ode mnie oczekuje:</label>
+          <input class="article__option" type="range" min="0" max="5" value="1" step="1" name="question3">
+        </p>
+        <p>
+          <label>Moja praca była interesująca i ciekawa:</label>
+          <input class="article__option" type="range" min="0" max="5" value="1" step="1" name="question4">
+        </p>
+        <p>
+          <label>Atmosfera w firmie była przyjazna:</label>
+          <input class="article__option" type="range" min="0" max="5" value="1" step="1" name="question5">
+        </p>
+
+      </article>
+
+
+ 
+
+      <article class="article article__3">
+        <h3>Przyczyny odejścia</h3>
+        <p>
+          <label
+            ><input name="reason" value="1" type="checkbox" /> Niski poziom
+            wynagrodzenia</label
+          >
+        </p>
+        <p>
+          <label
+            ><input name="reason" value="2" type="checkbox" /> Relacje w
+            zespole</label
+          >
+        </p>
+        <p>
+          <label
+            ><input name="reason" value="3" type="checkbox" /> Brak możliwości
+            rozwoju</label
+          >
+        </p>
+        <p>
+          <label 
+            ><input name="reason" value="4" type="checkbox" /> Zła organizacja
+            pracy</label
+          >
+        </p>
+        <p>
+          <label
+            ><input name="reason" value="5" type="checkbox" /> Nieodpowiednie
+            zarządzanie</label
+          >
+        </p>
+        <p>
+          <label 
+            ><input name="reason" value="6" type="checkbox" /> Zbyt duża ilość
+            obowiązków</label
+          >
+        </p>
+        <p>
+          <label 
+            ><input name="reason" value="7" type="checkbox" /> Brak jasnej
+            ścieżki awansów</label
+          >
+        </p>
+        <p>
+          <label
+            ><input name="reason" value="8" type="checkbox" /> Inne - wskaż
+            jakie:</label
+          >
+        </p>
+        <p>
+          <label>
+            <textarea
+              class="article__content"
+              name="reason"
+              placeholder="Wskaż inne przyczyny"
+            ></textarea>
+          </label>
+        </p>
+      </article>
+
+      
+      <article class="article article__4">
+        <h3>Informacje dodatkowe</h3>
+        <p>
+          <label>Czy jest coś jeszcze, czym chciałabyś/łbyś się z nami podzielić? Jesli tak -
+          wskaż proszę poniżej.
+        </label>
+            <textarea 
+            class="article__content"
+            name="additional-information"
+            placeholder="Wpisz swoje dodatkowe obserwacje i sugestie"></textarea>
+      </p>
+      </article>
+
+      <article class="article article__5">
+        <h3>Umów spotkanie z HR Business Partnerem</h3>
+        <p>
+          <label>Jeśli zechcesz opowiedzieć nam bardziej szczegółowo o Twoich doświadczeniach z pracy w maka<i>Design</i>, wskaż termin spotkania.
+        </label>
+            <input
+            class="article__option"
+            name="date"
+            type="date"
+            >
+            <input
+            class="article__option"
+            name="time"
+            type="time"
+            >
+      </p>
+      </article>
+
+      <article class="article article__6">
+        <h3>Informacje o Tobie</h3>
+        <p>
+          <label>Wybierz Biuro, w którym pracowałaś/eś:</label>
+          <select name="department" class="article__option">
+            <option>Wskaż Biuro</option>
+            <option>Biuro Projektowania</option>
+            <option>Biuro Sprzedaży</option>
+            <option>Biuro Zasobów Ludzkich</option>
+            <option>Biuro Finansów</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Wskaż poziom swojego stanowiska:</label>
+          <select name="position" class="article__option">
+            <option>Wskaż stanowisko</option>
+            <option>Stażysta</option>
+            <option>Specjalista</option>
+            <option>Ekspert</option>
+            <option>Manager</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Określ swój staż pracy:</label>
+          <select name="experience" class="article__option">
+            <option>Wskaż staż pracy</option>
+            <option>Poniżej 1 roku</option>
+            <option>1-3 lata</option>
+            <option>Powyżej 3 lat</option>
+          </select>
+        </p>
+        <p>
+          <label>Wskaż, kto był Twoim bezpośrednim przełożonym:
+              <input type="text" class="article__option" name="supervistor" placeholder="Podaj imię i nazwisko przełożonego">
+          </label>
+        </p>
+      </article>
+
+      <div class="sender">
+        <input type="submit" class="sender__button" value="Wyślij">
+      </div>
+    </form>
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>
