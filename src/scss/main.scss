@@ -7,6 +7,8 @@
 @import "modules/sender.scss";
 @import "modules/special.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
 
 :root {
   --normal-padding:16px;
@@ -43,8 +45,19 @@ body {
   margin-top: 20px;
 }
 
+h1 {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 50px;
+  font-weight: 700;
+  margin:0;
+}
+
 h2 {
   align-self: flex-start;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin:0;
 }
 
 h3 {
