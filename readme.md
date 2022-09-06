@@ -1,18 +1,25 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+exit-interview
+# Description
 
-# WTF Webpack Starter Kit 
+Project is dedicated for employers, who want to check out an opinion of their emoyees. The best oppotunity for knowing that is a moment, when some emploee wants quit his job. It gives the most real results.
 
-Simple toolkit for your static websites development.
+You can check this Project here: https://joannamakarewicz.github.io/exit-interview/
 
-## How to use it?
+## Contents
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Project contains of six section of questions:
 
-## Available scripts
+1. General opinion.
+2. Opinion in some certain areas (5 questions).
+3. Reason of emploees's decision.
+4. Additional question which gives general oportunity for expressing opinion - text area.
+5. Information about emploee for better analyses process.
+6. Calendar for meeting with Human Resourses Business Partner in case something should be discussed.
 
-`npm run start` - runs development mode
+### Languages
 
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+Languages used to build Project: 
+- HTML 
+- CSS 
+- SCSS 
+- JS.
