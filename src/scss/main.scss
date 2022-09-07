@@ -7,13 +7,16 @@
 @import "modules/sender.scss";
 @import "modules/special.scss";
 @import "modules/reset.scss";
+@import "modules/header.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
 
 :root {
-  --normal-padding:16px;
-  --small-padding:5px;
+  --normal-padding: 16px;
+  --small-padding: 5px;
+  --background-color: white;
+  --text-color: black;
+  --background-article: #d1e2d1;
 }
 
 html {
@@ -26,6 +29,8 @@ html {
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -41,41 +46,27 @@ body {
     rgba(24, 111, 23, 0.650298) 42%,
     #181515 100%
   );
-  min-height: 100px;
+  min-height: 80px;
   min-width: 100vw;
   margin-top: 20px;
-}
-
-h1 {
-  font-family: 'Qwitcher Grypen', cursive;
-  font-size: 50px;
-  font-weight: 700;
-  margin:0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:smaller;
 }
 
 h2 {
   align-self: flex-start;
-  font-family: 'Qwitcher Grypen', cursive;
+  font-family: "Qwitcher Grypen", cursive;
   font-size: 40px;
   font-weight: 400;
-  margin:0;
+  margin: 0;
 }
 
 h3 {
   margin-top: 0;
   color: #660708;
-}
-
-.header {
-  background: #cbf1f9;
-  background: linear-gradient(
-    132deg,
-    #cbf1f9 0%,
-    rgba(24, 111, 23, 0.650298) 42%,
-    #181515 100%
-  );
-  min-height: 100px;
-  min-width: 100vw;
 }
 
 .main {
@@ -86,5 +77,3 @@ h3 {
     width: 80%;
   }
 }
-
-

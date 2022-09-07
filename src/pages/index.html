@@ -8,7 +8,12 @@
     <link href="../scss/main.scss" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__position">
+      <p class="header__dark header__dark--js">Zmień kolor</p>
+      <p class="header__date"></p>
+    </div>
+    </header>
 
     <main class="main">
       <div class="heading">
@@ -16,7 +21,7 @@
         <div class="heading__content">
           <h2>Dzień dobry,</h2>
           <p>zbliża się termin zakończenia przez Ciebie współpracy z firmą
-          maka<i>Design</i>. Zapraszam Cię zatem do uzupełnienia poniższej ankiety.
+          <b>maka</b><i>Design</i>. Zapraszam Cię zatem do uzupełnienia poniższej ankiety.
           Zapewniam, że wnikliwie przeanalizujemy Twoje sugestie, a wyciągnięte
           wnioski przyczynią się do rozwoju naszego środowiska pracy.
           Proponujemy Ci następująca kolejność zdarzeń:</p>
@@ -26,12 +31,12 @@
           <li>
             Spotkanie z HR Business Partnerem w celu pogłębienia Twoich opinii.
           </li>
-          <li>Wspólne omówienie wniosków i możliwych zmian w makaDesign.</li>
+          <li>Wspólne omówienie wniosków i możliwych zmian w <b>maka</b><i>Design</i>.</li>
         </ol>
-        <p><b>Serdecznie zapraszam Cię do pierwszego etapu!</b></p>
+        <p class="heading__special">Serdecznie zapraszam Cię do pierwszego etapu!</p>
       </div>
 <form class="form" method="post" action="https://dev.cotenfrontend.pl">
-      <article class="article article__1">
+      <article class="article article--js article__1">
         <h3 class="article__heading">Ogólna ocena satysfakcji</h3>
         <p>
           Jak bardzo prawdopodobne jest, że polecisz nas jako pracodawcę swojemu
@@ -310,6 +315,6 @@
     </form>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">© 2022 maka<i>Design</i></footer>
   </body>
 </html>

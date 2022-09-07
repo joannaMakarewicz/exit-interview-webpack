@@ -1,5 +1,5 @@
 .article {
-  background: #d1e2d1;
+  background-color: var(--background-article);
   padding: var(--normal-padding);
   margin-bottom: 6px;
   &__content {

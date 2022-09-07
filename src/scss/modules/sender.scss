@@ -9,7 +9,8 @@
       padding: var(--normal-padding);
       border: none;
       border-radius: 5px;
-      width: 90px;    
+      width: 90px;   
+      color:var(--text-color); 
       &:hover {
       border: 2px solid rgba(20, 80, 19, 0.65);
     }
