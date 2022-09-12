@@ -1,5 +1,5 @@
 .header {
-  font-size:16px;
+  font-size: 16px;
   background: #cbf1f9;
   background: linear-gradient(
     132deg,
@@ -11,13 +11,23 @@
   &__date {
     color: white;
     margin: 26px 6px;
+    transition: font-size 0.3s linear;
   }
   &__dark {
     color: white;
     margin: 26px 6px;
+    transition: font-size 0.3s linear;
   }
   &__position {
     display: flex;
     justify-content: space-around;
   }
+}
+
+.header__dark:hover {
+  font-size: larger;
+}
+
+.header__date:hover {
+  font-size: larger;
 }

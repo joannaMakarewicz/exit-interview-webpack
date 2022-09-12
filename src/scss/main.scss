@@ -11,6 +11,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
 
+@keyframes request {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 :root {
   --normal-padding: 16px;
   --small-padding: 5px;
@@ -52,7 +61,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:smaller;
+  font-size: smaller;
 }
 
 h2 {

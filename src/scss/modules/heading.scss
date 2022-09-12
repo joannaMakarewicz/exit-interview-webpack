@@ -17,6 +17,7 @@
       font-weight: 400;
       margin:16px 0;
       text-align:center;
+      animation:request 3s ease-in-out infinite;
     }
     @media screen and (min-width: 768px) {
       &__content {
