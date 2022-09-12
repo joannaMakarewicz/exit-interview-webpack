@@ -46,9 +46,8 @@ body {
     rgba(24, 111, 23, 0.650298) 42%,
     #181515 100%
   );
-  min-height: 80px;
+  padding: var(--normal-padding);
   min-width: 100vw;
-  margin-top: 20px;
   color: white;
   display: flex;
   justify-content: center;
@@ -61,7 +60,7 @@ h2 {
   font-family: "Qwitcher Grypen", cursive;
   font-size: 40px;
   font-weight: 400;
-  margin: 0;
+  margin: 16px 0;
 }
 
 h3 {

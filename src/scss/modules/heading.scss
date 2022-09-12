@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__list {
+      margin:0;}
     &__name {
       color:var(--text-color);
       font-size: 30px;
@@ -13,6 +15,8 @@
       font-family: "Qwitcher Grypen", cursive;
       font-size: 40px;
       font-weight: 400;
+      margin:16px 0;
+      text-align:center;
     }
     @media screen and (min-width: 768px) {
       &__content {

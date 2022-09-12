@@ -8,7 +8,7 @@ import '../scss/main.scss';
 
 import moment from 'moment/moment';
 
-const myDate=moment().format('MMMM Do YYYY, h:mm:ss a');
+const myDate=moment().format('lll');
 const myDate2=document.querySelector('.header__date');
 myDate2.innerHTML=myDate;
 
@@ -27,4 +27,5 @@ switchMode.addEventListener('click', () =>{
         isDark=true;
     }
 })
+
 

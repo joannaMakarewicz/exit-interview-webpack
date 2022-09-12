@@ -1,10 +1,19 @@
 .form {
   min-height: 100vh;
   margin: 0px;
+  &__buttons {
+    display:flex;
+    justify-content:flex-end;
+  }
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 6px;
     grid-row-gap: 6px;
+    &__buttons {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
   }
 }
+
