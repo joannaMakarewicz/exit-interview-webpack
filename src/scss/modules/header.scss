@@ -1,5 +1,5 @@
 .header {
-  font-size:13px;
+  font-size:16px;
   background: #cbf1f9;
   background: linear-gradient(
     132deg,
@@ -10,11 +10,11 @@
   min-width: 100vw;
   &__date {
     color: white;
-    margin: 16px;
+    margin: 26px 6px;
   }
   &__dark {
     color: white;
-    margin: 16px;
+    margin: 26px 6px;
   }
   &__position {
     display: flex;
