@@ -1,4 +1,4 @@
-exit-interview
+![cover](https://joannamakarewicz.github.io/exit-interview-webpack/exit-interview.png)
 # Description
 
 Project is dedicated for employers, who want to check out an opinion of their emoyees. The best oppotunity for knowing that is a moment, when some emploee wants quit his job. It gives the most real results.
