@@ -3,7 +3,7 @@
 
 Project is dedicated for employers, who want to check out an opinion of their emoyees. The best oppotunity for knowing that is a moment, when some emploee wants quit his job. It gives the most real results.
 
-You can check this Project here: https://joannamakarewicz.github.io/exit-interview/
+You can check this Project here: https://joannamakarewicz.github.io/exit-interview-webpack/
 
 ## Contents
 
