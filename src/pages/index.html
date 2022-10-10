@@ -36,7 +36,7 @@
           <h2>Dzień dobry,</h2>
           <p>
             zbliża się termin zakończenia przez Ciebie współpracy z firmą
-            <em>maka</em><i>Design</i>. Zapraszam Cię zatem do uzupełnienia
+            maka<i>Design</i>. Zapraszam Cię zatem do uzupełnienia
             poniższej ankiety. Zapewniam, że wnikliwie przeanalizujemy Twoje
             sugestie, a wyciągnięte wnioski przyczynią się do rozwoju naszego
             środowiska pracy. Proponujemy Ci następująca kolejność zdarzeń:
@@ -65,7 +65,7 @@
           </p>
           <div class="article__radio">
             <p class="special">
-              <label aria="mark 1"
+              <label 
                 >0<input
                   class="special__button"
                   id="mainMark0"
@@ -186,7 +186,7 @@
           </h3>
 
           <p>
-            <label
+            <label for="question1"
               >Miałam/em szansę w pełni wykorzystać swoje możliwości:</label
             >
             <input
@@ -196,11 +196,12 @@
               max="5"
               value="1"
               step="1"
+              id="question1"
               name="question1"
             >
           </p>
           <p>
-            <label
+            <label for="question2"
               >Otrzymałem niezbędne szkolenia i wsparcie w czasie
               wdrożenia:</label
             >
@@ -211,11 +212,12 @@
               max="5"
               value="1"
               step="1"
+              id="question2"
               name="question2"
             >
           </p>
           <p>
-            <label>Było dla mnie jasne, czego się ode mnie oczekuje:</label>
+            <label for="question3">Było dla mnie jasne, czego się ode mnie oczekuje:</label>
             <input
               class="article__option"
               type="range"
@@ -223,11 +225,12 @@
               max="5"
               value="1"
               step="1"
+              id="question3"
               name="question3"
             >
           </p>
           <p>
-            <label>Moja praca była interesująca i ciekawa:</label>
+            <label for="question4">Moja praca była interesująca i ciekawa:</label>
             <input
               class="article__option"
               type="range"
@@ -235,11 +238,12 @@
               max="5"
               value="1"
               step="1"
+              id="question4"
               name="question4"
             >
           </p>
           <p>
-            <label>Atmosfera w firmie była przyjazna:</label>
+            <label for="question5">Atmosfera w firmie była przyjazna:</label>
             <input
               class="article__option"
               type="range"
@@ -247,6 +251,7 @@
               max="5"
               value="1"
               step="1"
+              id="question5"
               name="question5"
             >
           </p>
@@ -255,74 +260,59 @@
         <article class="article article__3">
           <h3 class="article__heading">Przyczyny odejścia</h3>
           <p>
-            <label
-              ><input name="reason" value="1" type="checkbox"> Niski poziom
-              wynagrodzenia</label
-            >
+            <input  name="reason" id="reason1" value="1" type="checkbox">
+            <label  for="reason1"> Niski poziom wynagrodzenia</label>
           </p>
           <p>
-            <label
-              ><input name="reason" value="2" type="checkbox"> Relacje w
-              zespole</label
-            >
+            <input name="reason" id="reason2" value="2" type="checkbox">
+            <label for="reason2"> Relacje w zespole</label>
           </p>
           <p>
-            <label
-              ><input name="reason" value="3" type="checkbox"> Brak możliwości
-              rozwoju</label
-            >
+            <input name="reason" id="reason3" value="3" type="checkbox"> 
+            <label for="reason3"> Brak możliwości rozwoju</label>
           </p>
           <p>
-            <label
-              ><input name="reason" value="4" type="checkbox"> Zła organizacja
-              pracy</label
-            >
+            <input name="reason" id="reason3" value="3" type="checkbox"> 
+            <label for="reason4"> Zła organizacja pracy</label> 
           </p>
           <p>
-            <label
-              ><input name="reason" value="5" type="checkbox"> Nieodpowiednie
-              zarządzanie</label
-            >
+            <input name="reason" id="reason5" value="5" type="checkbox"> 
+            <label for="reason5"> Zbyt duża ilość obowiązków</label>  
           </p>
           <p>
-            <label
-              ><input name="reason" value="6" type="checkbox"> Zbyt duża ilość
-              obowiązków</label
-            >
+            <input name="reason" id="reason6" value="6" type="checkbox">
+            <label for="reason6"> Nieodpowiednie zarządzanie</label>
           </p>
           <p>
-            <label
-              ><input name="reason" value="7" type="checkbox"> Brak jasnej
-              ścieżki awansów</label
-            >
+            <input name="reason" id="reason7" value="7" type="checkbox">
+            <label for="reason7"> Brak jasnej ścieżki awansów</label>    
           </p>
           <p>
-            <label
-              ><input name="reason" value="8" type="checkbox"> Inne - wskaż
-              jakie:</label
-            >
+            <input name="reason" id="reason8" value="8" type="checkbox"> 
+            <label for="reason8"> Inne - wskaż jakie:</label>
           </p>
           <p>
-            <label>
+            <label for="reason9"></label>
               <textarea
                 class="article__content"
                 name="reason"
+                id="reason9"
                 placeholder="Wskaż inne przyczyny"
               ></textarea>
-            </label>
           </p>
         </article>
 
         <article class="article article__4">
           <h3 class="article__heading">Informacje dodatkowe</h3>
           <p>
-            <label
+            <label for="additional-information"
               >Czy jest coś jeszcze, czym chciałabyś/łbyś się z nami podzielić?
               Jesli tak - wskaż proszę poniżej.
             </label>
             <textarea
               class="article__content"
               name="additional-information"
+              id="additional-information"
               placeholder="Wpisz swoje dodatkowe obserwacje i sugestie"
             ></textarea>
           </p>
@@ -332,14 +322,16 @@
           <h3 class="article__heading">
             Umów spotkanie z HR Business Partnerem
           </h3>
-          <p>
-            <label
-              >Jeśli zechcesz opowiedzieć nam bardziej szczegółowo o Twoich
+          <p>Jeśli zechcesz opowiedzieć nam bardziej szczegółowo o Twoich
               doświadczeniach z pracy w maka<i>Design</i>, wskaż termin
-              spotkania.
-            </label>
-            <input class="article__option" name="date" type="date">
-            <input class="article__option" name="time" type="time">
+              spotkania.</p>
+          <p>
+            <label for="date">Data: </label>
+            <input class="article__option" name="date" id="date" type="date">
+          </p>
+          <p>
+            <label for="time">Godzina: </label>
+            <input class="article__option" name="time" id="time" type="time">
           </p>
         </article>
 
